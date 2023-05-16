@@ -1,0 +1,13 @@
+---
+hosts_per_dc:
+  dc1:
+    - host1
+    - host2
+    - host3
+  dc2:
+    - host4
+    - host5
+
+dc: dc2
+
+random_proxy_host: "{{ hosts_per_dc[dc]|random }}"

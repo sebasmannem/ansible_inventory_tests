@@ -1,0 +1,20 @@
+---
+- name: random proxy
+  hosts: localhost
+  connection: local
+
+  tasks:
+  - set_fact:
+      proxy: "{{random_proxy_host}}"
+  - name: Debug
+    debug:
+      msg: "new: {{random_proxy_host}}, persisted: {{proxy}}"
+  - name: Debug
+    debug:
+      msg: "new: {{random_proxy_host}}, persisted: {{proxy}}"
+  - name: Debug
+    debug:
+      msg: "new: {{random_proxy_host}}, persisted: {{proxy}}"
+  - name: Debug
+    debug:
+      msg: "new: {{random_proxy_host}}, persisted: {{proxy}}"
